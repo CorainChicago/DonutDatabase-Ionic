@@ -58,6 +58,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('donuts-new', {
+    url: "/detail",
+    templateUrl: "templates/donuts-new.html"
+  })
+
   .state('tab.donut_shops', {
       url: '/donut_shops',
       views: {
