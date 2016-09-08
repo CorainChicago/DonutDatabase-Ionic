@@ -37,6 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
+  
 
   .state('tab.home', {
       url: "/home",
@@ -58,21 +59,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('donuts_new', {
+    url: "/new",
+    templateUrl: "templates/donuts-new.html"
+  })
+
+  // .state('tab.new', {
+  //     url: '/new',
+  //     views: {
+  //       'donuts-new': {
+  //         templateUrl: 'templates/tab-donuts-new.html',
+  //         controller: 'DonutsNewCtrl'
+  //       }
+  //     }
+  //   })
+
   .state('tab.donut_shops', {
       url: '/donut_shops',
       views: {
         'tab-donut_shops': {
           templateUrl: 'templates/tab-donut_shops.html',
           controller: 'DonutShopsCtrl'
-        }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
         }
       }
     })
